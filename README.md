@@ -1,4 +1,4 @@
-# 👋 Hi there! I'm Ziad Mahmoud Hanafi
+# 👋 Hi there! I'm Ziad
 
 I'm a **Data Scientist** and **AI Engineer** with a passion for creating data-driven solutions and innovative AI models. Currently, I'm a third-year **Computer Engineering** student, constantly learning and exploring new ways to leverage data and technology.
 
