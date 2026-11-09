@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="Ziad Hanafi, Machine Learning Engineer, Computer Vision and OCR, Cairo, Egypt">
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#50e3ff"/>
+      <stop offset="0.5" stop-color="#6366f1"/>
+      <stop offset="1" stop-color="#a855f7"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0.78" cy="0.4" r="0.55">
+      <stop offset="0" stop-color="#6366f1" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#6366f1" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0.08" cy="1" r="0.45">
+      <stop offset="0" stop-color="#50e3ff" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#50e3ff" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#ffffff" stroke-opacity="0.045" stroke-width="1"/>
+    </pattern>
+    <clipPath id="card"><rect width="1200" height="320" rx="24"/></clipPath>
+    <style>
+      .head { font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+      .mono { font-family: 'JetBrains Mono', Consolas, 'SFMono-Regular', Menlo, monospace; }
+      .pulse { animation: pulse 2.4s ease-in-out infinite; }
+      @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+      .edge { stroke-dasharray: 4 6; animation: flow 3s linear infinite; }
+      @keyframes flow { to { stroke-dashoffset: -40; } }
+      .node { animation: glow 3s ease-in-out infinite; }
+      .n2 { animation-delay: 0.5s; } .n3 { animation-delay: 1s; } .n4 { animation-delay: 1.5s; }
+      @keyframes glow { 0%, 100% { opacity: 0.55; } 50% { opacity: 1; } }
+    </style>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <rect width="1200" height="320" fill="#050810"/>
+    <rect width="1200" height="320" fill="url(#grid)"/>
+    <rect width="1200" height="320" fill="url(#glowA)"/>
+    <rect width="1200" height="320" fill="url(#glowB)"/>
+
+    <!-- neural net motif -->
+    <g transform="translate(840 60)" stroke="url(#grad)" stroke-width="1.2" fill="none" opacity="0.8">
+      <g class="edge">
+        <path d="M0 40L120 10M0 40L120 100M0 40L120 190"/>
+        <path d="M0 160L120 10M0 160L120 100M0 160L120 190"/>
+        <path d="M120 10L240 55M120 100L240 55M120 190L240 55"/>
+        <path d="M120 10L240 145M120 100L240 145M120 190L240 145"/>
+      </g>
+    </g>
+    <g transform="translate(840 60)" fill="#0a0e1a">
+      <circle cx="0" cy="40" r="8"/><circle cx="0" cy="160" r="8"/>
+      <circle cx="120" cy="10" r="8"/><circle cx="120" cy="100" r="8"/><circle cx="120" cy="190" r="8"/>
+      <circle cx="240" cy="55" r="8"/><circle cx="240" cy="145" r="8"/>
+    </g>
+    <g transform="translate(840 60)">
+      <circle class="node" cx="0" cy="40" r="7" fill="#50e3ff"/>
+      <circle class="node n2" cx="0" cy="160" r="7" fill="#50e3ff"/>
+      <circle class="node n3" cx="120" cy="10" r="7" fill="#6366f1"/>
+      <circle class="node" cx="120" cy="100" r="7" fill="#6366f1"/>
+      <circle class="node n4" cx="120" cy="190" r="7" fill="#6366f1"/>
+      <circle class="node n2" cx="240" cy="55" r="7" fill="#a855f7"/>
+      <circle class="node n3" cx="240" cy="145" r="7" fill="#a855f7"/>
+    </g>
+
+    <!-- status pill -->
+    <g transform="translate(64 58)">
+      <rect width="286" height="32" rx="16" fill="#a6f65d" fill-opacity="0.08" stroke="#a6f65d" stroke-opacity="0.3"/>
+      <circle class="pulse" cx="20" cy="16" r="5" fill="#a6f65d"/>
+      <text x="36" y="21" class="mono" font-size="13" fill="#a6f65d" letter-spacing="0.5">Open to ML roles &amp; freelance</text>
+    </g>
+
+    <text x="62" y="168" class="head" font-size="76" font-weight="700" fill="url(#grad)" letter-spacing="-2.5">Ziad Hanafi</text>
+    <text x="64" y="216" class="head" font-size="26" font-weight="600" fill="#f1f5f9">Machine Learning Engineer · Computer Vision &amp; OCR</text>
+    <text x="64" y="256" class="mono" font-size="15" fill="#94a3b8" letter-spacing="0.3">I take models out of the notebook and into products people use.</text>
+
+    <rect x="0" y="316" width="1200" height="4" fill="url(#grad)"/>
+  </g>
+  <rect x="0.5" y="0.5" width="1199" height="319" rx="24" fill="none" stroke="#ffffff" stroke-opacity="0.08"/>
+</svg>
